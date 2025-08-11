@@ -8,6 +8,7 @@ const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
 app.use(cors()); // In prod: cors({ origin: "https://your.salesforce.domain" })
 app.use(express.json());
+console.log("OPENAI_API_KEY is:", OPENAI_API_KEY ? "set" : "NOT SET");
 
 app.post("/chat", async (req, res) => {
   try {
