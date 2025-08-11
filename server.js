@@ -4,7 +4,7 @@ import cors from "cors";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY || "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";
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
 app.use(cors()); // In prod: cors({ origin: "https://your.salesforce.domain" })
 app.use(express.json());
